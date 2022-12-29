@@ -16,7 +16,7 @@ jobs:
       - name: Checkout main branch
         uses: actions/checkout@v3
 
-      - name: Update balena.yml
+      - name: Update balena.yml test
         uses: balena-io-experimental/balena.yml-action@main
         with:
           # Synchronise the GitHub README with the Balena Hub README
