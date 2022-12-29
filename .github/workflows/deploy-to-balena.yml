@@ -1,9 +1,11 @@
 name: "Deploy to Balena"
 
 on:
-  push:
-    tags:
-      - "*.*.*"
+ pull_request:
+    types: [opened, synchronize, closed]
+    branches:
+      - main
+      - master
 
 env:
   BALENA_APP: maggie0002/test-fleet
