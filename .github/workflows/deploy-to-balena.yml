@@ -15,7 +15,7 @@ jobs:
     name: "Deploy-to-Balena"
     runs-on: "ubuntu-latest"
     steps:
-      - name: Checkout main branch test
+      - name: Checkout main branch test version
         uses: actions/checkout@v3
 
       - name: Update balena.yml test
