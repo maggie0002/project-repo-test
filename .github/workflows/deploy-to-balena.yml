@@ -29,4 +29,4 @@ jobs:
         with:
           balena_token: ${{ secrets.BALENA_API_KEY }}
           fleet: ${{ env.BALENA_APP }}
-          versionist: true
+          versionbot: true
