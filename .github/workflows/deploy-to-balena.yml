@@ -2,6 +2,8 @@ name: "Deploy to Balena"
 
 on:
   push:
+    tags:
+      - "*.*.*"
 
 env:
   BALENA_APP: maggie0002/test-fleet
