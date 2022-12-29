@@ -2,13 +2,9 @@ name: "Deploy to Balena"
 
 on:
   push:
-    tags:
-      - "*.*.*"
-    paths-ignore:
-      - 'docs/**'
 
 env:
-  BALENA_APP: maggie0002/test-block
+  BALENA_APP: maggie0002/test-fleet
 
 jobs:
   build:
@@ -31,3 +27,4 @@ jobs:
         with:
           balena_token: ${{ secrets.BALENA_API_KEY }}
           fleet: ${{ env.BALENA_APP }}
+          versionist: true
